@@ -1,0 +1,40 @@
+
+<html>
+<head>
+<link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+ 
+    <title></title>
+</head>
+<body>
+<nav class="navbar navbar-light bg-faded" style="background-color: #e3f2fd;">
+  <a class="navbar-brand" href="#">TwitFase</a>
+  <ul class="nav navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/about">About</a>
+    </li>
+  </ul>
+  <form class="form-inline navbar-form pull-right">
+    <input class="form-control" type="text" placeholder="Search">
+    <button class="btn" type="submit">Search</button>
+  </form>
+</nav>
+  <div class="container">
+    <div class="row">
+      <h1 class="col-xs-12 text-center">Lets be Anti-Social</h1>
+         <script src="./js/facebook.js"></script>
+  <script>
+    // Only works after `FB.init` is called
+    function myFacebookLogin() {
+      FB.login(function(){}, {scope: 'publish_actions'});
+    }
+    </script>
+<button onclick="myFacebookLogin()">Login with Facebook</button>
+    </div>
+  </div>
+</body>
+</html>
